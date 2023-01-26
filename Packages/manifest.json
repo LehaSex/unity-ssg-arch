@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.leopotam.ecslite": "https://github.com/Leopotam/ecslite.git",
     "com.richtools.filebasedplayerprefs": "https://github.com/richardelms/FileBasedPlayerPrefs.git",
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.feature.development": "1.0.1",
