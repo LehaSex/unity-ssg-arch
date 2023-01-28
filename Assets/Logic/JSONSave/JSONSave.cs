@@ -96,6 +96,16 @@ public static class JSONSave
         return (Vector2)GetDataFromSaveFile(key, defaultValue);
     }
 
+    public static float GetVector2x(string key, float defaultValue = default(float))
+    {
+        return GetVector2(key, new Vector2(defaultValue, 0)).x;
+    }
+
+    public static float GetVector2y(string key, float defaultValue = default(float))
+    {
+        return GetVector2(key, new Vector2(0, defaultValue)).y;
+    }
+
     public static void SetVector3(string key, Vector3 value)
     {
         AddDataToSaveFile(key, value);
@@ -104,6 +114,21 @@ public static class JSONSave
     public static Vector3 GetVector3(string key, Vector3 defaultValue = default(Vector3))
     {
         return (Vector3)GetDataFromSaveFile(key, defaultValue);
+    }
+
+    public static float GetVector3x(string key, float defaultValue = default(float))
+    {
+        return GetVector3(key, new Vector3(defaultValue, 0, 0)).x;
+    }
+
+    public static float GetVector3y(string key, float defaultValue = default(float))
+    {
+        return GetVector3(key, new Vector3(0, defaultValue, 0)).y;
+    }
+
+    public static float GetVector3z(string key, float defaultValue = default(float))
+    {
+        return GetVector3(key, new Vector3(0, 0, defaultValue)).z;
     }
 
     public static bool HasKey(string key)

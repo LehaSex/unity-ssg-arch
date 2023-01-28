@@ -26,6 +26,7 @@ public class Tester : MonoBehaviour
         Vector3 v2 = new Vector3(7, 7, 7);
         v2 = JSONSave.GetVector3("test2", v2);
         Debug.Log("Vector3: " + v2.x + ", " + v2.y + ", " + v2.z);
+        Debug.Log("Vector3.x: " + JSONSave.GetVector3x("test2", 1));
         JSONSave.SetVector2("test2", new Vector2(6, 5));
         Debug.Log("Vector2: " + JSONSave.GetVector2("test2", new Vector2(1, 1)).x + ", " + JSONSave.GetVector2("test2", new Vector2(1, 1)).y);
 
